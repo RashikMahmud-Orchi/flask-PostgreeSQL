@@ -8,7 +8,7 @@ app = Flask(__name__)
 app.secret_key = 'xyzsdfg'
 app.config['UPLOAD_FOLDER'] = './uploaded_images'
 app.config['ALLOWED_EXTENSIONS'] = {'png', 'jpg', 'jpeg'}
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://orchi:r9ybSlSOVM5ADl968LrKdBS6p8cftbdx@dpg-cnsjdk8l5elc73fkuo5g-a/user_e3f9'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://orchi:r9ybSlSOVM5ADl968LrKdBS6p8cftbdx@dpg-cnsjdk8l5elc73fkuo5g-a/user_e3f9'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
